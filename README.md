@@ -85,10 +85,6 @@ Hasil pengujian meliputi:
 
 ![Tangkapan layar TP5](screenshots/tp%205.jpeg)
 
-### Fitur Tambahan
-
-**[Masukkan screenshot output fitur tambahan yang dibuat]**
-
 ## 6. Analisis Referensi Objek
 
 Analisis mengenai referensi objek, nilai primitif, penggunaan `static`, metode `equals()`, dan defensive copy disusun dalam Google Docs sebagai bagian dari tugas TP5.
