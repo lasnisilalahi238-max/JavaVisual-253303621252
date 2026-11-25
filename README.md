@@ -81,7 +81,9 @@ Hasil pengujian meliputi:
 ### Screenshot Output Program
 ## Dokumentasi TP5
 
-![Screenshot TP5](screenshots/tp5.jpeg)
+## Dokumentasi TP5
+
+![Tangkapan layar TP5](screenshots/tp%205.jpeg)
 
 ### Fitur Tambahan
 
