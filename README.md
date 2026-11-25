@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # Manajer Karakter — TP3 (Java Visual SIH-6406)
 
 ## Deskripsi
@@ -104,3 +105,76 @@ Analisis desain dan ekosistem Java dibuat dalam dokumen Google Docs.
 Link Google Docs:
 
 [https://docs.google.com/document/d/1ovtjNpOdEk32HWb_hXy57lDYRGIB3eP8dmGHYwrpBZA/edit?usp=sharing]
+=======
+# Character Manager
+
+Aplikasi **Character Manager** merupakan program Java untuk mengelola data karakter. Proyek ini dikembangkan menggunakan konsep Object-Oriented Programming (OOP) dan pola arsitektur Model-View-Controller (MVC).
+
+## Sprint #3 — TP8
+
+### MainWindow, Dinamis Data & Analisis MVC
+
+TP8 berfokus pada pengembangan antarmuka grafis menggunakan Java Swing. Pada tahap ini, aplikasi mulai beralih dari tampilan konsol menjadi jendela GUI yang menampilkan data karakter secara dinamis.
+
+### Implementasi
+
+Beberapa bagian yang dikerjakan pada TP8:
+
+- Membuat `MainWindow.java` pada package `view` dengan memperluas class `JFrame`.
+- Menampilkan data karakter melalui perulangan, sehingga tampilan menyesuaikan data yang tersedia.
+- Menambahkan karakter baru sehingga jumlah karakter mencapai minimal lima.
+- Menampilkan statistik rata-rata level karakter menggunakan `JLabel`.
+- Menggunakan `SwingUtilities.invokeLater()` pada `Main.java` untuk menjalankan GUI.
+- Memisahkan tanggung jawab program berdasarkan struktur MVC.
+
+### Karakter Tambahan
+
+Karakter tambahan digunakan untuk memperluas variasi data dan menguji tampilan serta perhitungan rata-rata level.
+
+| Nama Karakter | Tipe | Level | Alasan Pemilihan |
+|---|---|---|---|
+| [Nama karakter baru 1] | [Tipe karakter] | [Level] | [Alasan pemilihan tipe dan level] |
+| [Nama karakter baru 2] | [Tipe karakter] | [Level] | [Alasan pemilihan tipe dan level] |
+
+### Alur Data dan MVC
+
+Pada aplikasi ini, `Main.java` membuat dan mengisi data karakter melalui `CharacterManager`. Data tersebut kemudian digunakan oleh `MainWindow` untuk ditampilkan pada antarmuka grafis. Model bertanggung jawab menyimpan dan mengelola data, sedangkan View bertanggung jawab menampilkan informasi kepada pengguna. Pemisahan ini membantu menjaga struktur program agar lebih teratur dan mudah dikembangkan.
+
+### Dokumentasi TP8
+
+#### Screenshot 1 — Tampilan Awal
+![alt text](<tp 8 sebelum.jpeg>)
+
+
+
+#### Screenshot 2 — Perubahan Data dan Statistik
+
+Screenshot menunjukkan perubahan data karakter dan hasil rata-rata level yang ikut diperbarui.
+
+![alt text](<tp 8 sesudah.jpeg>)
+
+### Analisis GUI dan MVC
+
+Analisis mengenai perbedaan program sekuensial dan event-driven, penggunaan `SwingUtilities.invokeLater()`, debugging JFrame, konsep *is-a* dan *has-a*, serta penerapan MVC pada aplikasi ini dapat dibaca melalui Google Docs berikut:
+
+**Dokumen Analisis TP8:**  
+https://docs.google.com/document/d/1KQuPCQ4piv6QKHlNybdtpQf8suIB4Fh15-ZK9mbjqYk/edit?usp=sharing
+
+### Cara Menjalankan Program
+
+Kompilasi program melalui terminal:
+
+```powershell
+javac -d out src/com/unpri/charactermanager/model/*.java src/com/unpri/charactermanager/controller/*.java src/com/unpri/charactermanager/view/*.java src/com/unpri/charactermanager/Main.java
+```
+
+Jalankan aplikasi:
+
+```powershell
+java -cp out com.unpri.charactermanager.Main
+```
+
+### Kesimpulan
+
+Melalui TP8, aplikasi Character Manager telah memiliki antarmuka grafis berbasis Java Swing. Data karakter ditampilkan secara dinamis dan dilengkapi statistik rata-rata level. Pengembangan ini juga menjadi penerapan pemisahan tanggung jawab melalui pola MVC.
+>>>>>>> Stashed changes
