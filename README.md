@@ -1,106 +1,107 @@
-# Manajer Karakter — TP3 (Java Visual SIH-6406)
+# Java Visual – TP5 AP6
+## Manajer Karakter Sprint #2
 
-## Deskripsi
+### Pengelola Karakter, Analitik & Referensi Objek
 
-Proyek ini merupakan tugas TP3 mata kuliah Java Visual yang membahas pembuatan program Character Manager menggunakan bahasa pemrograman Java. Program ini digunakan untuk membuat dan menampilkan data karakter dengan menerapkan konsep Object-Oriented Programming (OOP).
+**Mata Kuliah:** Java Visual (SIH-6406)  
+**Praktikum:** AP6 Belajar Praktik  
+**Tugas:** TP5 – Sprint #2  
+**Nama:** Lasny Silalahi  
+**NIM:** 253303621252
+**Kelas:** 2 Pagi B
 
-Pada tugas ini, terdapat tiga karakter yang dibuat sebagai contoh. Selain itu, program juga dilengkapi dengan fitur kenaikan level, penambahan mana, dan pengecekan kondisi karakter menggunakan metode `isAlive()`.
+---
 
-## Fitur Program
+## 1. Deskripsi
 
-Beberapa fitur yang terdapat dalam program ini adalah:
+TP5 merupakan pengembangan dari proyek Character Manager pada TP3. Pada tugas ini, program dikembangkan dengan menambahkan pengelolaan data karakter, pencarian karakter, serta fitur analitik menggunakan Java.
 
-1. Membuat objek karakter menggunakan constructor.
-2. Menentukan jenis karakter menggunakan enum.
-3. Menggunakan atribut `private` untuk menerapkan enkapsulasi.
-4. Menggunakan getter dan setter untuk mengakses serta mengubah atribut.
-5. Menghitung HP dan Attack Power berdasarkan level karakter.
-6. Mengubah level karakter dan menampilkan hasil perubahannya.
-7. Menambahkan atribut mana dengan tipe data `int`.
-8. Melakukan validasi agar nilai mana tidak boleh negatif.
-9. Menggunakan metode `isAlive()` untuk mengetahui apakah karakter masih hidup.
-10. Menampilkan informasi karakter menggunakan `toString()`.
+Implementasi dilakukan dengan menerapkan konsep Object-Oriented Programming (OOP), khususnya enkapsulasi, penggunaan koleksi `ArrayList`, dan pemahaman referensi objek.
 
-## Teknologi yang Digunakan
+## 2. Fitur yang Diimplementasikan
 
-- Bahasa pemrograman: Java
-- JDK: 17 atau lebih baru
-- Editor: Visual Studio Code
-- Konsep pemrograman: Object-Oriented Programming (OOP)
+### A. Pengelolaan Karakter
 
-## Hasil Program
+Program menyediakan beberapa metode untuk mengelola data karakter, yaitu:
 
-Program dijalankan melalui Terminal Visual Studio Code. Hasil yang ditampilkan meliputi data tiga karakter, perubahan level, serta pengujian fitur tambahan.
+- `addCharacter()` untuk menambahkan karakter ke dalam daftar.
+- `findByName()` untuk mencari karakter berdasarkan nama.
+- `removeCharacter()` untuk menghapus karakter berdasarkan nama.
+- `getTotalCharacters()` untuk mengetahui jumlah karakter yang tersimpan.
+- `getAllCharacters()` untuk mendapatkan salinan daftar karakter.
+
+Penambahan karakter dengan nama yang sama ditolak agar tidak terjadi duplikasi data.
+
+### B. Fitur Analitik
+
+Pengembangan pada TP5 mencakup fitur berikut:
+
+- `getAverageLevel()` untuk menghitung rata-rata level seluruh karakter.
+- `findByType()` untuk mencari karakter berdasarkan jenis karakter.
+
+Metode `getAverageLevel()` mengembalikan nilai `0` apabila daftar karakter masih kosong, sehingga program tidak mengalami pembagian dengan nol.
+
+### C. Fitur Tambahan
+
+Fitur tambahan yang dikembangkan pada tugas ini adalah:
+
+**[Tuliskan nama metode fitur tambahan yang kamu buat]**
+
+Fitur tersebut digunakan untuk menambah kemampuan pengelolaan atau analisis data karakter. Implementasinya tetap memperhatikan enkapsulasi agar data internal `CharacterManager` tidak dapat diubah secara langsung dari luar kelas.
+
+## 3. Konsep yang Dipelajari
+
+Melalui pengerjaan TP5, beberapa konsep Java yang dipelajari dan diterapkan adalah:
+
+- Penggunaan `ArrayList` untuk menyimpan kumpulan objek.
+- Override metode `equals()` untuk membandingkan karakter berdasarkan nama.
+- Pencegahan data duplikat.
+- Defensive copy pada metode `getAllCharacters()`.
+- Perbedaan referensi objek dan nilai primitif.
+- Penggunaan variabel `static` untuk data yang dimiliki bersama oleh seluruh objek.
+- Penerapan enkapsulasi pada pengelolaan data karakter.
+
+## 4. Hasil Pengujian
+
+Pengujian dilakukan melalui program `Main.java` untuk memastikan setiap metode berjalan sesuai dengan ketentuan tugas.
+
+Hasil pengujian meliputi:
+
+1. Penambahan karakter berhasil.
+2. Penambahan karakter dengan nama duplikat ditolak.
+3. Pencarian karakter berdasarkan nama berjalan dengan benar.
+4. Penghapusan karakter berhasil.
+5. Jumlah karakter ditampilkan sesuai data.
+6. Defensive copy diuji dengan mengubah daftar hasil `getAllCharacters()`.
+7. Rata-rata level karakter dihitung dengan benar.
+8. Pencarian karakter berdasarkan tipe menghasilkan data yang sesuai.
+
+## 5. Dokumentasi
 
 ### Screenshot Output Program
+## Dokumentasi TP5
 
-![Hasil Output Program](screenshots/outputtp03.png)
+![Screenshot TP5](screenshots/tp5.jpeg)
 
-### Pengujian Fitur Mana dan isAlive()
+### Fitur Tambahan
 
-Pada pengujian ini dibuat satu karakter tambahan dengan nama Necro. Karakter tersebut diberikan nilai mana sebesar 150. Selanjutnya, metode `isAlive()` dipanggil untuk mengetahui kondisi karakter.
+**[Masukkan screenshot output fitur tambahan yang dibuat]**
 
-Contoh hasil pengujian:
+## 6. Analisis Referensi Objek
 
-```text
-=== MINI CHALLENGE ===
+Analisis mengenai referensi objek, nilai primitif, penggunaan `static`, metode `equals()`, dan defensive copy disusun dalam Google Docs sebagai bagian dari tugas TP5.
 
-Nama: Necro
-Mana: 150
-Apakah karakter masih hidup? true
-```
+Dokumen analisis:
 
-Hasil tersebut menunjukkan bahwa karakter masih hidup karena nilai HP lebih besar dari 0.
+https://docs.google.com/document/d/1jeWA_dOfjEvrqKJidnPsB8QLnNT0x_Bbio-FVfg3rr8/edit?usp=sharing
 
-## Struktur Folder
+## 7. Kesimpulan
 
-```text
-CharacterManager/
-│
-├── src/
-│   └── com/
-│       └── unpri/
-│           └── charactermanager/
-│               ├── Main.java
-│               └── model/
-│                   ├── Character.java
-│                   └── CharacterType.java
-│
-├── screenshots/
-│   └── terminal-output.png
-│
-├── out/
-│
-└── README.md
-```
+Pada TP5, program Character Manager dikembangkan dengan menambahkan fitur pengelolaan dan analisis karakter. Tugas ini juga memberikan pemahaman mengenai cara kerja referensi objek, enkapsulasi, dan penggunaan koleksi dalam Java.
 
-## Cara Menjalankan Program
+Melalui pengujian yang dilakukan, setiap metode dapat diperiksa berdasarkan hasil yang ditampilkan oleh program.
 
-Pertama, buka folder proyek melalui Visual Studio Code, kemudian buka Terminal.
+---
 
-**1. Kompilasi program**
-
-```powershell
-javac -d out src/com/unpri/charactermanager/model/CharacterType.java src/com/unpri/charactermanager/model/Character.java src/com/unpri/charactermanager/Main.java
-```
-
-**2. Jalankan program**
-
-```powershell
-java -cp out com.unpri.charactermanager.Main
-```
-
-## Identitas Mahasiswa
-
-- Nama: Lasni Silalahi
-- NIM: 253303621252
-- Kelas: 3PAGIb
-- Mata Kuliah: Java Visual
-
-## Dokumentasi Analisis Desain (Bagian D)
-
-Analisis desain dan ekosistem Java dibuat dalam dokumen Google Docs.
-
-Link Google Docs:
-
-[https://docs.google.com/document/d/1ovtjNpOdEk32HWb_hXy57lDYRGIB3eP8dmGHYwrpBZA/edit?usp=sharing]
+**Repository:** JavaVisual – CharacterManager  
+**Branch:** `sprint-2-tp5`
