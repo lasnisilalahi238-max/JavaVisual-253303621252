@@ -1,4 +1,3 @@
-
 package com.unpri.charactermanager.controller;
 
 import java.util.List;
